@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-page: #f7f7f4;
+  --bg-card: #ffffff;
+  --bg-subtle: #f3f4f6;
+  --nav-bg: #fcfbf8;
+  --border: #e5e7eb;
+  --border-light: #d1d5db;
+  --text-primary: #111111;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --text-faint: #9ca3af;
+  --accent: #eab308;
+  --accent-dark: #ca8a04;
+  --on-accent: #111111;
+  --success: #16a34a;
+  --success-dark: #15803d;
+  --error: #dc2626;
+  --error-dark: #b91c1c;
+  --error-light: #f87171;
+  --badge-bg: #fef3c7;
+  --badge-text: #92400e;
+  --kb-key-1: #fffdf8;
+  --kb-key-2: #f1ecde;
+  --kb-mod-1: #fdfcfa;
+  --kb-mod-2: #ecead4;
+  --kb-border: #e7e2d6;
+  --kb-text: #57534e;
+}
+
+.dark {
+  --bg-page: #15171c;
+  --bg-card: #1d2026;
+  --bg-subtle: #262a33;
+  --nav-bg: #191b21;
+  --border: #2e323c;
+  --border-light: #3a3f4a;
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --text-muted: #a1a8b3;
+  --text-faint: #7b828e;
+  --accent: #eab308;
+  --accent-dark: #fbbf24;
+  --on-accent: #111111;
+  --success: #34d399;
+  --success-dark: #6ee7b7;
+  --error: #f87171;
+  --error-dark: #fca5a5;
+  --error-light: #fca5a5;
+  --badge-bg: #422006;
+  --badge-text: #fbbf24;
+  --kb-key-1: #262a33;
+  --kb-key-2: #1a1d23;
+  --kb-mod-1: #23262d;
+  --kb-mod-2: #191c22;
+  --kb-border: #363b45;
+  --kb-text: #b8bcc4;
+}
+
+html,
+body {
+  background-color: var(--bg-page);
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+input:focus {
+  outline: none;
+}
