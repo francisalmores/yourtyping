@@ -4,6 +4,8 @@ export default function sitemap() {
 
   const routes = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' },
+    { path: '/1-minute-typing-test', priority: 0.8, changeFrequency: 'monthly' },
+    { path: '/code-typing-test', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/privacy-policy', priority: 0.3, changeFrequency: 'yearly' },
     { path: '/terms-of-service', priority: 0.3, changeFrequency: 'yearly' },
   ]
