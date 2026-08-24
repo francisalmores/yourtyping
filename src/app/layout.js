@@ -22,7 +22,11 @@ export const metadata = {
     "typing practice",
     "typing games",
   ],
-  openGraph: {
+  
+alternates: {
+  canonical: "https://yourtyping.com",
+},
+openGraph: {
     type: "website",
     url: "https://yourtyping.com",
     title: "YourTyping — Free Typing Speed Test & WPM Test",
