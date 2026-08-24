@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Timer, Gamepad2, BarChart3, Trophy, LogOut, Settings } from "lucide-react";
+import { Timer, Gamepad2, BarChart3, Trophy, Newspaper, LogOut, Settings } from "lucide-react";
 import { useAuth } from "@/context/AuthProvider";
 import { supabase } from "@/lib/supabaseClient";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -13,6 +13,7 @@ const TABS = [
   { href: "/game", label: "Game", icon: Gamepad2 },
   { href: "/stats", label: "My Stats", icon: BarChart3 },
   { href: "/leaderboard", label: "Leaderboard", icon: Trophy },
+  { href: "/blog", label: "Blog", icon: Newspaper },
 ];
 
 export default function Nav() {
@@ -61,7 +62,7 @@ export default function Nav() {
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             {TABS.map((t) => {
-              const active = pathname === t.href;
+              const active = pathname === t.href || pathname.startsWith(t.href + "/");
               return (
                 <Link
                   key={t.href}
