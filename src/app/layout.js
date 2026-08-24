@@ -22,11 +22,10 @@ export const metadata = {
     "typing practice",
     "typing games",
   ],
-  
-alternates: {
-  canonical: "https://yourtyping.com",
-},
-openGraph: {
+  alternates: {
+    canonical: "https://yourtyping.com",
+  },
+  openGraph: {
     type: "website",
     url: "https://yourtyping.com",
     title: "YourTyping — Free Typing Speed Test & WPM Test",
@@ -67,6 +66,7 @@ openGraph: {
 
 export default function RootLayout({ children }) {
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   return (
     <html lang="en">
       <head>
@@ -82,6 +82,27 @@ export default function RootLayout({ children }) {
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
             crossOrigin="anonymous"
           />
+        )}
+        {gaId && (
+          <>
+            <Script
+              async
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+            />
+            <Script
+              id="ga-init"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${gaId}');
+                `,
+              }}
+            />
+          </>
         )}
       </head>
       <body
