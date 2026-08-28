@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
-const PUBLISH_DATE = "2026-09-07T00:00:00Z";
+const PUBLISH_DATE = "2026-08-01T00:00:00Z";
 
 export const metadata = {
   title: "Touch Typing for Programmers: Why Code Feels Harder to Type Than Prose",
@@ -25,7 +25,7 @@ export default function ProgrammerTypingPost() {
         Touch Typing for Programmers: Why Code Feels Harder to Type Than Prose
       </h1>
       <p className="text-xs mb-6" style={{ color: "var(--text-secondary)" }}>
-        Published September 7, 2026
+        Published August 28, 2026
       </p>
 
       <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>

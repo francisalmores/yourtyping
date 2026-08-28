@@ -6,9 +6,9 @@ export default function sitemap() {
 
   const blogPosts = [
     { path: '/blog/average-typing-speed', date: '2026-08-24' },
-    { path: '/blog/how-to-improve-typing-speed', date: '2026-08-31' },
-    { path: '/blog/touch-typing-for-programmers', date: '2026-09-07' },
-    { path: '/blog/typing-games-vs-typing-tests', date: '2026-09-14' },
+    { path: '/blog/how-to-improve-typing-speed', date: '2026-08-28' },
+    { path: '/blog/touch-typing-for-programmers', date: '2026-08-28' },
+    { path: '/blog/typing-games-vs-typing-tests', date: '2026-08-28' },
   ].filter((post) => new Date(post.date + 'T00:00:00Z') <= now)
 
   const routes = [

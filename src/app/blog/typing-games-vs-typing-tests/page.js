@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
-const PUBLISH_DATE = "2026-09-14T00:00:00Z";
+const PUBLISH_DATE = "2026-08-01T00:00:00Z";
 
 export const metadata = {
   title: "Do Typing Games Actually Improve Your WPM? What We Know",
@@ -25,7 +25,7 @@ export default function GamesVsTestsPost() {
         Do Typing Games Actually Improve Your WPM? What We Know
       </h1>
       <p className="text-xs mb-6" style={{ color: "var(--text-secondary)" }}>
-        Published September 14, 2026
+        Published August 28, 2026
       </p>
 
       <p className="text-sm mb-8" style={{ color: "var(--text-secondary)" }}>

@@ -22,21 +22,21 @@ const POSTS = [
     title: "How to Improve Your Typing Speed: 10 Techniques That Actually Work",
     excerpt:
       "Most people plateau not from lack of practice, but from practicing the wrong way. 10 concrete techniques to actually raise your WPM.",
-    date: "2026-08-31",
+    date: "2026-08-28",
   },
   {
     slug: "touch-typing-for-programmers",
     title: "Touch Typing for Programmers: Why Code Feels Harder to Type Than Prose",
     excerpt:
       "Why the same person who types 70 WPM on prose can feel clumsy typing code — the mechanics of symbol typing and how to practice them deliberately.",
-    date: "2026-09-07",
+    date: "2026-08-28",
   },
   {
     slug: "typing-games-vs-typing-tests",
     title: "Do Typing Games Actually Improve Your WPM? What We Know",
     excerpt:
       "Typing games are more fun than formal tests — but do they build speed the same way? What each is genuinely good for, and why the answer is to use both.",
-    date: "2026-09-14",
+    date: "2026-08-28",
   },
 ];
 
